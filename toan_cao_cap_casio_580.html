@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toán cao cấp dễ học | Casio fx-580VN X</title>
+<style>
+:root{--ink:#19233b;--muted:#63708a;--bg:#f4f7fc;--card:#fff;--line:#e1e7f0;--blue:#3759d7;--teal:#0f9b8e;--orange:#f0a23a;--purple:#805ad5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+header{background:linear-gradient(125deg,#172554,#3158d4 62%,#0f9b8e);color:white;padding:32px 18px 28px}
+.wrap{max-width:1120px;margin:auto}header .eyebrow{opacity:.82;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase}h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.15;margin:10px 0}header p{max-width:700px;margin:12px 0;color:#e8edff}
+.progress-shell{height:8px;background:#ffffff40;border-radius:99px;overflow:hidden;max-width:440px;margin-top:18px}.progress{height:100%;width:0;background:#8ff0d9;transition:width .2s}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);overflow:auto;white-space:nowrap;padding:9px max(12px,calc((100vw - 1120px)/2))}
+nav button{border:0;background:transparent;padding:10px 13px;border-radius:10px;color:#48536d;font-weight:650;cursor:pointer}nav button.active,nav button:hover{background:#eaf0ff;color:var(--blue)}
+main{max-width:1120px;margin:22px auto;padding:0 16px 55px;display:grid;grid-template-columns:250px minmax(0,1fr);gap:20px}
+aside{align-self:start;position:sticky;top:72px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+aside h3{margin:0 0 8px;font-size:1rem}aside a{display:block;padding:8px 10px;border-radius:8px;text-decoration:none;color:#59657c;font-size:.93rem}aside a:hover{background:#f0f4ff;color:var(--blue)}
+.content{min-width:0}.panel{display:none}.panel.active{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:clamp(16px,3vw,26px);margin-bottom:16px;box-shadow:0 4px 16px #1c2d5010}
+h2{font-size:1.55rem;line-height:1.25;margin:0 0 12px}h3{margin:20px 0 8px;font-size:1.1rem}p{margin:8px 0}.muted{color:var(--muted)}.tag{display:inline-block;background:#edf2ff;color:#314fb8;border-radius:999px;padding:3px 9px;font-size:.78rem;font-weight:700;margin-bottom:8px}
+.callout{padding:13px 15px;border-radius:12px;background:#eef7ff;border-left:4px solid var(--blue);margin:12px 0}.warn{background:#fff7e9;border-left-color:var(--orange)}.good{background:#eafaf5;border-left-color:var(--teal)}
+.math{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f5f7fb;border:1px solid #e4e9f2;border-radius:10px;padding:13px;overflow:auto;text-align:center;margin:10px 0;font-size:1rem;white-space:pre-wrap}
+.step{display:flex;gap:12px;margin:11px 0;align-items:flex-start}.num{flex:0 0 28px;height:28px;border-radius:50%;background:#eaf0ff;color:var(--blue);font-weight:800;display:grid;place-items:center}.step div:last-child{flex:1}
+button,.btn{font:inherit;cursor:pointer}.primary{background:var(--blue);color:white;border:0;border-radius:10px;padding:10px 15px;font-weight:700}.secondary{background:white;color:var(--blue);border:1px solid #cbd5f5;border-radius:10px;padding:9px 13px;font-weight:650}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}input,select{font:inherit;padding:10px 12px;border:1px solid #cbd5e1;border-radius:9px;max-width:100%;background:#fff;color:var(--ink)}label{display:block;font-weight:650;margin:8px 0 4px}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+table{border-collapse:collapse;width:100%;margin:10px 0}td,th{padding:9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f5f7fc}
+.quiz-option{display:block;width:100%;text-align:left;background:white;border:1px solid var(--line);padding:11px 13px;border-radius:10px;margin:8px 0;color:var(--ink)}.quiz-option:hover{border-color:var(--blue)}.quiz-option.correct{background:#e8fbf3;border-color:var(--teal)}.quiz-option.wrong{background:#fff0ed;border-color:#e87563}.feedback{font-weight:650;margin-top:8px}
+footer{text-align:center;color:var(--muted);padding:24px 16px;font-size:.9rem}
+@media(max-width:800px){main{grid-template-columns:1fr}aside{position:static;display:none}.grid2{grid-template-columns:1fr}nav{top:0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Góc học tập • Toán cao cấp từ con số 0</div>
+<h1>Học Toán cao cấp<br>cùng Casio fx-580VN X</h1>
+<p>Học từng bước: hiểu khái niệm → xem ví dụ → bấm máy → tự luyện. Nội dung được tổ chức theo 5 chủ đề tài liệu bạn đã gửi.</p>
+<div id="progressText">Tiến độ bài học: 0/5 chủ đề đã đánh dấu hoàn thành</div><div class="progress-shell"><div class="progress" id="progress"></div></div>
+</div></header>
+<nav id="tabs">
+<button class="active" data-tab="start">Bắt đầu</button><button data-tab="topic1">1. Ma trận & định thức</button><button data-tab="topic2">2. Nghịch đảo & hạng</button><button data-tab="topic3">3. Hệ phương trình</button><button data-tab="topic4">4. Không gian vectơ</button><button data-tab="topic5">5. Ánh xạ tuyến tính</button><button data-tab="practice">Luyện tập</button>
+</nav>
+<main>
+<aside><h3>Lộ trình học</h3><a href="#" data-go="start">Cách dùng trang</a><a href="#" data-go="topic1">Chủ đề 1 — Ma trận</a><a href="#" data-go="topic2">Chủ đề 2 — Nghịch đảo, hạng</a><a href="#" data-go="topic3">Chủ đề 3 — Hệ tuyến tính</a><a href="#" data-go="topic4">Chủ đề 4 — Không gian vectơ</a><a href="#" data-go="topic5">Chủ đề 5 — Ánh xạ tuyến tính</a><a href="#" data-go="practice">Tự kiểm tra</a></aside>
+<div class="content">
+<section class="panel active" id="start">
+<div class="card"><span class="tag">BẮT ĐẦU Ở ĐÂY</span><h2>Chào bạn! Mình học chậm mà chắc nhé.</h2><p>Không cần biết trước nhiều kiến thức. Mỗi chủ đề có phần giải thích dễ hiểu, ví dụ, hướng dẫn Casio và câu hỏi kiểm tra.</p>
+<div class="callout good"><b>Nguyên tắc:</b> Máy tính giúp tính toán và kiểm tra kết quả. Các khái niệm như cơ sở, độc lập tuyến tính, Ker và Im vẫn cần hiểu bằng toán học.</div>
+<h3>Cách học đề xuất</h3>
+<div class="step"><span class="num">1</span><div><b>Đọc khái niệm</b><br><span class="muted">Tập trung vào ý nghĩa, đừng học thuộc công thức ngay.</span></div></div>
+<div class="step"><span class="num">2</span><div><b>Làm ví dụ từng dòng</b><br><span class="muted">Tự viết phép tính trước khi xem kết quả.</span></div></div>
+<div class="step"><span class="num">3</span><div><b>Bấm Casio để kiểm tra</b><br><span class="muted">Tên menu có thể hơi khác tùy ngôn ngữ/cài đặt máy.</span></div></div>
+<div class="step"><span class="num">4</span><div><b>Làm câu hỏi cuối bài</b><br><span class="muted">Đánh dấu hoàn thành khi bạn tự giải thích lại được.</span></div></div>
+<button class="primary" onclick="go('topic1')">Bắt đầu Chủ đề 1 →</button>
+</div>
+<div class="card"><h2>Nhớ nhanh: các ký hiệu thường gặp</h2><table><tr><th>Ký hiệu</th><th>Ý nghĩa</th></tr><tr><td><code>A</code></td><td>Một ma trận</td></tr><tr><td><code>aᵢⱼ</code></td><td>Phần tử ở hàng i, cột j</td></tr><tr><td><code>det(A)</code> hoặc <code>|A|</code></td><td>Định thức của ma trận vuông A</td></tr><tr><td><code>A⁻¹</code></td><td>Ma trận nghịch đảo, nếu tồn tại</td></tr><tr><td><code>rank(A)</code></td><td>Hạng của ma trận</td></tr><tr><td><code>Ker(T)</code>, <code>Im(T)</code></td><td>Hạt nhân và ảnh của ánh xạ tuyến tính</td></tr></table></div>
+</section>
+
+<section class="panel" id="topic1">
+<div class="card"><span class="tag">CHỦ ĐỀ 1</span><h2>Ma trận và định thức</h2><p>Ma trận là một bảng số được xếp thành hàng và cột.</p><div class="math">A = [ 1  2  3 ]\n    [ 4  5  6 ]</div><p>Ma trận này có <b>2 hàng, 3 cột</b>, nên kích thước là 2 × 3. Phần tử ở hàng 2, cột 1 là 4.</p>
+<h3>1. Cộng và trừ ma trận</h3><p>Hai ma trận chỉ cộng/trừ được khi cùng kích thước. Ta cộng/trừ các phần tử ở đúng vị trí.</p><div class="math">A = [1  2]     B = [5  6]\n    [3  4]         [7  8]\n\nA + B = [1+5  2+6] = [ 6  8]\n        [3+7  4+8]   [10 12]</div>
+<div class="callout"><b>Mẹo nhớ:</b> cùng vị trí thì tính với nhau; không cộng chéo hàng/cột.</div>
+<h3>2. Nhân ma trận với một số</h3><div class="math">2A = [2×1  2×2] = [2  4]\n     [2×3  2×4]   [6  8]</div>
+<h3>3. Nhân hai ma trận</h3><p>Điều kiện: số cột của ma trận thứ nhất bằng số hàng của ma trận thứ hai. Kích thước kết quả = số hàng ma trận đầu × số cột ma trận sau.</p><div class="math">[1 2] × [5] = [1×5 + 2×6] = [17]\n[3 4]   [6]   [3×5 + 4×6]   [39]</div>
+<h3>4. Định thức ma trận 2 × 2</h3><div class="math">A = [a  b]       det(A) = ad − bc\n    [c  d]</div><p>Ví dụ: A = [[1,2],[3,4]] thì det(A) = 1×4 − 2×3 = 4 − 6 = −2.</p>
+<h3>Bấm Casio fx-580VN X: nhập ma trận</h3>
+<div class="step"><span class="num">1</span><div>Bấm <b>MENU</b> → chọn chế độ <b>Matrix / Ma trận</b>.</div></div>
+<div class="step"><span class="num">2</span><div>Chọn <b>MatA</b> → chọn kích thước <b>2×2</b>.</div></div>
+<div class="step"><span class="num">3</span><div>Nhập lần lượt <b>1 = 2 = 3 = 4 =</b> cho ma trận [[1,2],[3,4]]. Bấm <b>AC</b> để quay về màn hình tính, dữ liệu ma trận vẫn được lưu.</div></div>
+<div class="step"><span class="num">4</span><div>Để tính định thức, mở <b>OPTN</b> → mục <b>Matrix</b> → chọn <b>det(</b> → chọn <b>MatA</b> → đóng ngoặc → <b>=</b>. Kết quả ví dụ là <b>−2</b>. Nếu menu trên máy khác đôi chút, hãy tìm chức năng det trong mục Matrix.</div></div>
+<div class="callout warn">Lưu ý: cách bấm có thể thay đổi theo phiên bản/cài đặt. Luôn nhìn nhãn trên màn hình máy để chọn đúng mục.</div>
+<h3>Thử phép cộng ngay trên trang</h3><p>Nhập hai ma trận 2×2 theo thứ tự hàng, cách nhau bằng dấu phẩy.</p>
+<div class="grid2"><div><label for="ma">Ma trận A (4 số)</label><input id="ma" value="1,2,3,4"></div><div><label for="mb">Ma trận B (4 số)</label><input id="mb" value="5,6,7,8"></div></div><div class="row" style="margin-top:12px"><button class="primary" onclick="matrixAdd()">Tính A + B</button><button class="secondary" onclick="matrixSub()">Tính A − B</button></div><div class="math" id="matrixResult">Kết quả sẽ hiện ở đây.</div>
+<button class="secondary" onclick="complete('topic1')">✓ Đánh dấu Chủ đề 1 hoàn thành</button></div>
+</section>
+
+<section class="panel" id="topic2">
+<div class="card"><span class="tag">CHỦ ĐỀ 2</span><h2>Ma trận nghịch đảo và hạng ma trận</h2>
+<h3>1. Ma trận nghịch đảo là gì?</h3><p>Với ma trận vuông A, ma trận nghịch đảo A⁻¹ thỏa mãn:</p><div class="math">A × A⁻¹ = A⁻¹ × A = I</div><p>I là ma trận đơn vị. Ma trận A có nghịch đảo khi và chỉ khi <b>det(A) ≠ 0</b>.</p>
+<h3>Ví dụ 2 × 2</h3><div class="math">A = [a b]       A⁻¹ = 1/(ad−bc) [ d  −b]\n    [c d]                          [−c   a]</div><p>Với A = [[1,2],[3,4]], định thức = −2, khác 0 nên có nghịch đảo.</p>
+<h3>Casio dùng để kiểm tra</h3><p>Nhập A trong chế độ Matrix như Chủ đề 1. Trên màn hình tính, gọi MatA rồi dùng phím <b>x⁻¹</b> và <b>=</b> để yêu cầu máy tính nghịch đảo, nếu máy/phiên bản hỗ trợ thao tác này trong chế độ ma trận. Đối chiếu kết quả với công thức tay; nếu không gọi được MatA⁻¹ trực tiếp, dùng menu Matrix của máy để chọn MatA rồi thực hiện chức năng nghịch đảo.</p>
+<div class="callout warn">Không có nghịch đảo nếu det(A)=0. Đừng cố bấm máy để “ép” ra kết quả.</div>
+<h3>2. Hạng ma trận (rank)</h3><p>Hạng là số hàng (tương đương số cột) độc lập tuyến tính lớn nhất. Có thể hiểu sơ bộ: nó cho biết ma trận còn bao nhiêu hàng/cột mang thông tin độc lập.</p><p>Với ma trận vuông cấp n: nếu det(A) ≠ 0 thì rank(A)=n. Nếu det(A)=0 thì hạng nhỏ hơn n, cần xét tiếp bằng biến đổi sơ cấp hoặc định thức con.</p>
+<div class="callout">Máy tính hỗ trợ tính số, nhưng xác định hạng thường cần biến đổi hàng hoặc xét các định thức con. Hãy trình bày bước toán học trong bài thi.</div>
+<button class="secondary" onclick="complete('topic2')">✓ Đánh dấu Chủ đề 2 hoàn thành</button></div>
+</section>
+
+<section class="panel" id="topic3">
+<div class="card"><span class="tag">CHỦ ĐỀ 3</span><h2>Hệ phương trình tuyến tính</h2><p>Hệ phương trình tuyến tính là nhiều phương trình bậc nhất có chung các ẩn. Có thể viết gọn dưới dạng <b>AX = B</b>.</p>
+<div class="math">x + y = 5\n2x − y = 1</div>
+<h3>Giải từng bước bằng tay</h3><div class="step"><span class="num">1</span><div>Từ phương trình đầu: <b>y = 5 − x</b>.</div></div><div class="step"><span class="num">2</span><div>Thay vào phương trình hai: 2x − (5 − x) = 1.</div></div><div class="step"><span class="num">3</span><div>Rút gọn: 3x − 5 = 1 ⇒ x = 2.</div></div><div class="step"><span class="num">4</span><div>Thay lại: y = 5 − 2 = 3. Vậy nghiệm là <b>(x,y)=(2,3)</b>.</div></div>
+<h3>Liên hệ với ma trận</h3><div class="math">A = [1  1]   X = [x]   B = [5]\n    [2 −1]       [y]       [1]</div><p>Nếu A khả nghịch thì nghiệm duy nhất X = A⁻¹B. Nếu không khả nghịch, phải xét hạng ma trận hệ số và ma trận mở rộng để xác định hệ vô nghiệm hay vô số nghiệm.</p>
+<h3>Casio fx-580VN X</h3><p>Dùng <b>MENU → Equation/Func (Phương trình)</b> → chọn hệ tuyến tính 2 ẩn hoặc 3 ẩn (tên mục có thể khác theo máy). Nhập hệ số theo thứ tự từng phương trình, sau đó bấm <b>=</b> để xem nghiệm. Với hệ lớn hơn hoặc bài yêu cầu biện luận, vẫn cần lập ma trận và trình bày điều kiện bằng tay.</p>
+<div class="callout good">Kiểm tra nghiệm bằng cách thế ngược vào từng phương trình. Với ví dụ trên: 2+3=5 và 2×2−3=1.</div>
+<button class="secondary" onclick="complete('topic3')">✓ Đánh dấu Chủ đề 3 hoàn thành</button></div>
+</section>
+
+<section class="panel" id="topic4">
+<div class="card"><span class="tag">CHỦ ĐỀ 4</span><h2>Không gian vectơ</h2><p>Vectơ có thể hình dung là một danh sách số, ví dụ (1,2) hoặc (1,0,−1). Không gian vectơ là tập hợp các vectơ thỏa các quy tắc cộng và nhân với số.</p>
+<h3>1. Tổ hợp tuyến tính</h3><p>Vectơ v là tổ hợp tuyến tính của v₁, v₂ nếu có các số a, b sao cho:</p><div class="math">v = a·v₁ + b·v₂</div>
+<h3>2. Độc lập và phụ thuộc tuyến tính</h3><p>Một nhóm vectơ <b>độc lập tuyến tính</b> nếu tổ hợp bằng vectơ 0 chỉ xảy ra khi tất cả hệ số đều bằng 0. Nếu có thể biểu diễn một vectơ bằng tổ hợp của các vectơ còn lại thì nhóm phụ thuộc tuyến tính.</p>
+<div class="math">a₁v₁ + a₂v₂ + … + aₙvₙ = 0</div><p>Để kiểm tra, đặt các vectơ làm cột của ma trận rồi giải hệ thuần nhất. Nếu chỉ có nghiệm hệ số bằng 0 thì độc lập.</p>
+<h3>3. Sinh, cơ sở và số chiều</h3><ul><li><b>Span / không gian sinh:</b> tất cả tổ hợp tuyến tính có thể tạo từ một nhóm vectơ.</li><li><b>Cơ sở:</b> một nhóm vectơ vừa độc lập tuyến tính vừa sinh ra toàn bộ không gian.</li><li><b>Số chiều:</b> số vectơ trong một cơ sở.</li><li><b>Không gian con:</b> tập con vẫn đóng với phép cộng và nhân với số, đồng thời chứa vectơ 0.</li></ul>
+<h3>Casio hỗ trợ ở đâu?</h3><p>Nhập ma trận các vectơ trong chế độ Matrix để tính định thức (trường hợp ma trận vuông) hoặc hỗ trợ các phép tính số. Máy không tự giải thích được vì sao một tập là cơ sở hay chứng minh không gian con; cần xét điều kiện và trình bày lập luận.</p>
+<div class="callout warn">Đừng nhầm: “có n vectơ” chưa đủ để kết luận là cơ sở. Còn phải kiểm tra độc lập tuyến tính và khả năng sinh.</div>
+<button class="secondary" onclick="complete('topic4')">✓ Đánh dấu Chủ đề 4 hoàn thành</button></div>
+</section>
+
+<section class="panel" id="topic5">
+<div class="card"><span class="tag">CHỦ ĐỀ 5</span><h2>Ánh xạ tuyến tính</h2><p>Ánh xạ T biến một vectơ đầu vào thành một vectơ đầu ra. T là tuyến tính khi giữ được hai tính chất sau:</p><div class="math">T(u + v) = T(u) + T(v)\nT(cu) = cT(u)</div>
+<h3>Ví dụ</h3><p>Cho T(x,y) = (2x, 2y). Khi nhân đầu vào với 3, đầu ra cũng nhân với 3. Ánh xạ này tuyến tính.</p>
+<h3>1. Hạt nhân Ker(T)</h3><p><b>Ker(T)</b> là tập tất cả vectơ đầu vào được biến thành vectơ 0:</p><div class="math">Ker(T) = {v : T(v) = 0}</div><p>Cách tìm: viết T(v)=0 rồi giải hệ phương trình thu được.</p>
+<h3>2. Ảnh Im(T)</h3><p><b>Im(T)</b> là tập tất cả vectơ có thể xuất hiện làm đầu ra T(v). Với ánh xạ được cho bằng ma trận A, ảnh liên quan đến không gian sinh bởi các cột của A.</p>
+<h3>3. Ma trận của ánh xạ tuyến tính</h3><p>Trong cơ sở chuẩn, nếu T(x)=Ax thì các cột của A chính là ảnh của các vectơ cơ sở chuẩn.</p>
+<div class="callout">Cách làm bài: (1) xác định công thức T; (2) kiểm tra tính tuyến tính; (3) giải T(v)=0 để tìm Ker; (4) xét các cột/giải hệ để tìm Im; (5) dùng ma trận biểu diễn nếu đề yêu cầu.</div>
+<h3>Casio dùng khi nào?</h3><p>Máy giúp giải các hệ số sau khi lập phương trình cho Ker(T), hoặc kiểm tra phép nhân ma trận. Việc chứng minh T tuyến tính và mô tả Ker/Im vẫn cần trình bày lý thuyết.</p>
+<button class="secondary" onclick="complete('topic5')">✓ Đánh dấu Chủ đề 5 hoàn thành</button></div>
+</section>
+
+<section class="panel" id="practice">
+<div class="card"><span class="tag">TỰ KIỂM TRA</span><h2>Trắc nghiệm nhanh</h2><p class="muted">Chọn đáp án; trang sẽ giải thích ngay. Làm lại bao nhiêu lần cũng được.</p>
+<div id="quiz"></div><div class="row"><button class="primary" onclick="nextQ()">Câu tiếp theo →</button><button class="secondary" onclick="resetQuiz()">Làm lại từ đầu</button></div><div id="quizCount" class="muted" style="margin-top:12px"></div></div>
+<div class="card"><h2>Máy tính ma trận mini</h2><p>Nhập 4 số theo thứ tự hàng của ma trận 2×2 để tính định thức.</p><div class="grid2"><div><label for="detInput">a, b, c, d</label><input id="detInput" value="1,2,3,4"></div><div><label>Kết quả</label><div class="math" id="detResult">−2</div></div></div><button class="primary" onclick="calcDet()">Tính det(A)</button><p class="muted">Công thức: det(A)=ad−bc. Công cụ này giúp kiểm tra số học, không thay thế phần trình bày.</p></div>
+</section>
+</div></main>
+<footer>Trang học tập cá nhân • Nội dung tóm lược theo 5 chủ đề tài liệu đã gửi. Học từng bài và kiểm tra lại bằng bài tập.</footer>
+<script>
+const tabs=[...document.querySelectorAll('[data-tab]')];let done=new Set();
+function go(id){document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active',p.id===id));tabs.forEach(t=>t.classList.toggle('active',t.dataset.tab===id));window.scrollTo({top:0,behavior:'smooth'})}
+tabs.forEach(t=>t.addEventListener('click',()=>go(t.dataset.tab)));
+document.querySelectorAll('[data-go]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();go(a.dataset.go)}));
+function complete(id){done.add(id);document.getElementById('progress').style.width=(done.size/5*100)+'%';document.getElementById('progressText').textContent=`Tiến độ bài học: ${done.size}/5 chủ đề đã đánh dấu hoàn thành`;event?.target?.blur?.()}
+function nums(id){const arr=document.getElementById(id).value.split(/[,;\s]+/).filter(Boolean).map(Number);if(arr.length!==4||arr.some(x=>!Number.isFinite(x)))throw Error('Hãy nhập đúng 4 số, ví dụ: 1,2,3,4');return arr}
+function matrixAdd(){matrixCalc(1)}function matrixSub(){matrixCalc(-1)}
+function matrixCalc(sign){try{const a=nums('ma'),b=nums('mb'),r=a.map((v,i)=>v+sign*b[i]);document.getElementById('matrixResult').textContent=`[ ${r[0]}  ${r[1]} ]\n[ ${r[2]}  ${r[3]} ]`}catch(e){document.getElementById('matrixResult').textContent=e.message}}
+function calcDet(){try{const [a,b,c,d]=nums('detInput');document.getElementById('detResult').textContent=`${a}×${d} − ${b}×${c} = ${a*d-b*c}`}catch(e){document.getElementById('detResult').textContent=e.message}}
+const qs=[
+{q:'Ma trận có 3 hàng và 2 cột có kích thước nào?',o:['2 × 3','3 × 2','5 × 1'],a:1,e:'Kích thước ghi số hàng trước, số cột sau: 3 × 2.'},
+{q:'Với A = [[1,2],[3,4]], det(A) bằng bao nhiêu?',o:['−2','2','10'],a:0,e:'det(A)=ad−bc=1×4−2×3=4−6=−2.'},
+{q:'Hai ma trận cộng được khi nào?',o:['Luôn luôn','Cùng kích thước','Có cùng định thức'],a:1,e:'Cần cùng số hàng và cùng số cột.'},
+{q:'Nếu ma trận vuông A có det(A) ≠ 0 thì điều gì đúng?',o:['A có ma trận nghịch đảo','A là ma trận không','A chắc chắn không có nghiệm'],a:0,e:'Định thức khác 0 tương đương A khả nghịch.'},
+{q:'Nghiệm của hệ x+y=5; 2x−y=1 là gì?',o:['x=3, y=2','x=2, y=3','x=1, y=4'],a:1,e:'Cộng hai phương trình được 3x=6 nên x=2, rồi y=3.'},
+{q:'Một cơ sở của không gian vectơ cần điều kiện nào?',o:['Chỉ cần có ít nhất 2 vectơ','Độc lập tuyến tính và sinh ra không gian','Các vectơ phải có tọa độ dương'],a:1,e:'Cơ sở vừa độc lập tuyến tính vừa sinh ra toàn bộ không gian.'},
+{q:'Điều kiện của ánh xạ tuyến tính T gồm:',o:['T(u+v)=T(u)+T(v) và T(cu)=cT(u)','T(u)=u mọi u','T chỉ nhận số dương'],a:0,e:'Ánh xạ tuyến tính bảo toàn phép cộng vectơ và phép nhân vô hướng.'},
+{q:'Ker(T) gồm các vectơ nào?',o:['Tất cả đầu ra của T','Các vectơ v sao cho T(v)=0','Chỉ vectơ có tọa độ 1'],a:1,e:'Ker(T) là tập các đầu vào được biến thành vectơ 0.'}
+];let qi=0,answered=0;
+function renderQ(){const q=qs[qi];document.getElementById('quiz').innerHTML=`<h3>Câu ${qi+1}/${qs.length}: ${q.q}</h3>`+q.o.map((x,i)=>`<button class="quiz-option" onclick="answer(${i})">${String.fromCharCode(65+i)}. ${x}</button>`).join('')+`<div class="feedback" id="feedback"></div>`;document.getElementById('quizCount').textContent=`Đã trả lời ${answered}/${qs.length} câu trong lượt này.`}
+function answer(i){if(document.getElementById('feedback').dataset.done)return;const q=qs[qi];const opts=[...document.querySelectorAll('.quiz-option')];opts.forEach((b,j)=>{if(j===q.a)b.classList.add('correct');if(j===i&&i!==q.a)b.classList.add('wrong');b.disabled=true});const f=document.getElementById('feedback');f.textContent=(i===q.a?'Chính xác! ':'Chưa đúng. ')+q.e;f.dataset.done='1';answered++;document.getElementById('quizCount').textContent=`Đã trả lời ${answered}/${qs.length} câu trong lượt này.`}
+function nextQ(){qi=(qi+1)%qs.length;renderQ()}function resetQuiz(){qi=0;answered=0;renderQ()}
+renderQ();calcDet();
+</script>
+</body></html>
